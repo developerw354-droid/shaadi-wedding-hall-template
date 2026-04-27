@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Celestial Banquet - Wedding Hall</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-deep: #b88f2a;
+      --ivory: #fffaf5;
+      --card: #ffffff;
+    }
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg, #fffdfb 0%, #f7f5f2 100%); }
+    .serif { font-family: "Playfair Display", serif; }
+    /* Small decorative shimmer */
+    .gold-glow { box-shadow: 0 6px 24px rgba(212,175,55,0.12); }
+    input, select, textarea { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+  </style>
+</head>
+<body>
+  <section class="max-w-4xl mx-auto my-16 p-8 rounded-3xl bg-white gold-glow border border-[rgba(212,175,55,0.12)]" aria-labelledby="section-title">
+    <!-- Header / Hero -->
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <div class="flex-1">
+        <h1 id="section-title" class="serif text-3xl md:text-4xl text-[#2b2b2b] font-semibold leading-tight">
+          Celestial Banquet
+        </h1>
+        <p class="mt-2 text-sm md:text-base text-gray-600 max-w-xl">
+          An exquisite Pakistani wedding hall blending timeless tradition with modern luxury. Celebrate your moment in a setting adorned with golden elegance and heartfelt hospitality.
+        </p>
+        <div class="mt-6 flex items-center gap-4">
+          <a href="#inquiry" class="inline-flex items-center gap-3 rounded-full px-6 py-3 bg-[var(--gold)] hover:bg-[var(--gold-deep)] text-white shadow-md transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            Book Now
+          </a>
+          <a href="#packages" class="text-[var(--gold)] hover:underline text-sm font-medium">View Packages</a>
+        </div>
+
+        <!-- Quick highlights -->
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-gray-600">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c.667 2 2 3 4 3" /></svg>
+            Up to 500 guests
+          </span>
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7" /></svg>
+            Elegant stage & lighting
+          </span>
+        </div>
+      </div>
+
+      <!-- Decorative monogram / teaser image -->
+      <div class="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-[var(--gold)]/20 to-[var(--gold-deep)]/10 border border-[rgba(212,175,55,0.12)] flex items-center justify-center">
+        <div class="text-center">
+          <div class="mx-auto w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-sm" style="border: 6px solid rgba(212,175,55,0.08);">
+            <span class="serif text-[var(--gold)] text-2xl font-bold">CB</span>
+          </div>
+          <p class="mt-2 text-xs text-gray-600">Timeless. Regal. Yours.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-[rgba(0,0,0,0.04)] pt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Packages (left column spanning two cols on lg?) -->
+      <div class="lg:col-span-2 space-y-6">
+        <h2 class="serif text-xl text-[#2b2b2b] font-semibold">Curated Packages</h2>
+        <p class="text-sm text-gray-600">Choose a package tailored to your celebration. Each includes our signature decor and attentive staff.</p>
+
+        <div id="packages" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+          <!-- Basic -->
+          <div class="rounded-xl bg-white p-4 border border-[rgba(212,175,55,0.06)] shadow-sm">
+            <div class="flex items-center justify-between">
+              <h3 class="font-medium text-gray-800">Basic</h3>
+              <div class="text-sm text-gray-500">For intimate gatherings</div>
+            </div>
+            <div class="mt-4">
+              <div class="text-2xl font-bold text-[var(--gold)]">PKR 80,000</div>
+              <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                <li>Venue (4 hours)</li>
+                <li>Standard lighting</li>
+                <li>Basic seating & tables</li>
+              </ul>
+            </div>
+            <div class="mt-4">
+              <button class="w-full py-2 rounded-md bg-amber-50 text-[var(--gold)] border border-[rgba(212,175,55,0.08)] hover:bg-amber-100">Select</button>
+            </div>
+          </div>
+
+          <!-- Standard -->
+          <div class="rounded-xl bg-white p-4 border-2 border-[var(--gold)]">
+            <div class="flex items-center justify-between">
+              <h3 class="font-medium text-gray-800">Standard</h3>
+              <div class="text-sm text-gray-500">Most popular</div>
+            </div>
+            <div class="mt-4">
+              <div class="text-2xl font-bold text-[var(--gold)]">PKR 160,000</div>
+              <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                <li>Venue (6 hours)</li>
+                <li>Premium lighting & decor</li>
+                <li>Catering setup support</li>
+              </ul>
+            </div>
+            <div class="mt-4">
+              <button class="w-full py-2 rounded-md bg-[var(--gold)] text-white hover:bg-[var(--gold-deep)]">Select</button>
+            </div>
+          </div>
+
+          <!-- Premium -->
+          <div class="rounded-xl bg-white p-4 border border-[rgba(212,175,55,0.06)] shadow-sm">
+            <div class="flex items-center justify-between">
+              <h3 class="font-medium text-gray-800">Premium</h3>
+              <div class="text-sm text-gray-500">Grand celebrations</div>
+            </div>
+            <div class="mt-4">
+              <div class="text-2xl font-bold text-[var(--gold)]">PKR 320,000</div>
+              <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                <li>Venue (8+ hours)</li>
+                <li>Full custom decor & stage</li>
+                <li>Priority service & parking</li>
+              </ul>
+            </div>
+            <div class="mt-4">
+              <button class="w-full py-2 rounded-md bg-amber-50 text-[var(--gold)] border border-[rgba(212,175,55,0.08)] hover:bg-amber-100">Select</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="mt-6">
+          <h3 class="serif text-lg text-[#2b2b2b] font-semibold">Gallery</h3>
+          <p class="text-sm text-gray-600">A glimpse of our signature decorations and stage setups.</p>
+          <div class="mt-3 grid grid-cols-3 gap-2">
+            <img alt="Gallery 1" src="https://via.placeholder.com/300x200?text=Decoration+1" class="rounded-lg object-cover w-full h-24">
+            <img alt="Gallery 2" src="https://via.placeholder.com/300x200?text=Decoration+2" class="rounded-lg object-cover w-full h-24">
+            <img alt="Gallery 3" src="https://via.placeholder.com/300x200?text=Decoration+3" class="rounded-lg object-cover w-full h-24">
+            <img alt="Gallery 4" src="https://via.placeholder.com/300x200?text=Decoration+4" class="rounded-lg object-cover w-full h-24">
+            <img alt="Gallery 5" src="https://via.placeholder.com/300x200?text=Decoration+5" class="rounded-lg object-cover w-full h-24">
+            <img alt="Gallery 6" src="https://via.placeholder.com/300x200?text=Decoration+6" class="rounded-lg object-cover w-full h-24">
+          </div>
+        </div>
+
+        <!-- Facilities -->
+        <div class="mt-6">
+          <h3 class="serif text-lg text-[#2b2b2b] font-semibold">Facilities</h3>
+          <p class="text-sm text-gray-600">Thoughtfully provided to ensure comfort and convenience.</p>
+          <div class="mt-3 flex flex-wrap gap-3">
+            <!-- AC -->
+            <div class="flex items-center gap-3 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 9h18M3 15h18M7 9v6M17 9v6" />
+              </svg>
+              <span class="text-sm text-gray-700">AC</span>
+            </div>
+
+            <!-- Catering -->
+            <div class="flex items-center gap-3 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3M3 21h18" />
+              </svg>
+              <span class="text-sm text-gray-700">Catering</span>
+            </div>
+
+            <!-- Decoration -->
+            <div class="flex items-center gap-3 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l2 4 4 .5-3 2 1.1 4L12 12l-4.1.5L9 8l-3-2 .5-.5L12 2z" />
+              </svg>
+              <span class="text-sm text-gray-700">Decoration</span>
+            </div>
+
+            <!-- Parking -->
+            <div class="flex items-center gap-3 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-sm text-gray-700">Parking</span>
+            </div>
+
+            <!-- Stage -->
+            <div class="flex items-center gap-3 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-6h6v6" />
+              </svg>
+              <span class="text-sm text-gray-700">Stage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Booking Inquiry Form (right column) -->
+      <aside id="inquiry" class="bg-[var(--ivory)] p-5 rounded-xl border border-[rgba(212,175,55,0.06)] shadow-sm">
+        <h3 class="serif text-lg text-[#2b2b2b] font-semibold">Booking Inquiry</h3>
+        <p class="text-sm text-gray-600 mt-1">Share your details and we'll get back within 24 hours.</p>
+        <form class="mt-4 space-y-3">
+          <div>
+            <label class="text-xs text-gray-600">Event Date</label>
+            <input type="date" class="mt-1 w-full rounded-md border border-[rgba(0,0,0,0.06)] px-3 py-2 bg-white text-sm" />
+          </div>
+          <div>
+            <label class="text-xs text-gray-600">Guests (approx.)</label>
+            <input type="number" min="1" class="mt-1 w-full rounded-md border border-[rgba(0,0,0,0.06)] px-3 py-2 bg-white text-sm" placeholder="e.g., 150" />
+          </div>
+          <div>
+            <label class="text-xs text-gray-600">Package</label>
+            <select class="mt-1 w-full rounded-md border border-[rgba(0,0,0,0.06)] px-3 py-2 bg-white text-sm">
+              <option>Basic</option>
+              <option selected>Standard</option>
+              <option>Premium</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs text-gray-600">Full Name</label>
+            <input type="text" class="mt-1 w-full rounded-md border border-[rgba(0,0,0,0.06)] px-3 py-2 bg-white text-sm" placeholder="Your name" />
+          </div>
+          <div>
+            <label class="text-xs text-gray-600">Phone</label>
+            <input type="tel" class="mt-1 w-full rounded-md border border-[rgba(0,0,0,0.06)] px-3 py-2 bg-white text-sm" placeholder="+92 3XX XXX XXXX" />
+          </div>
+          <div>
+            <label class="text-xs text-gray-600">Email</label>
+            <input type="email" class="mt-1 w-full rounded-md border border-[rgba(0,0,0,0.06)] px-3 py-2 bg-white text-sm" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label class="text-xs text-gray-600">Message (optional)</label>
+            <textarea rows="3" class="mt-1 w-full rounded-md border border-[rgba(0,0,0,0.06)] px-3 py-2 bg-white text-sm" placeholder="Any special requests or notes"></textarea>
+          </div>
+          <div class="pt-2">
+            <button type="submit" class="w-full rounded-md py-2 bg-[var(--gold)] hover:bg-[var(--gold-deep)] text-white font-medium">Send Inquiry</button>
+            <p class="text-xs text-gray-500 mt-2">We respect your privacy. We'll contact you only regarding this inquiry.</p>
+          </div>
+        </form>
+        <div class="mt-4 text-xs text-gray-600">
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[var(--gold)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a1 1 0 0 0 1-1V8.5" /></svg>
+            <span>info@celestialbanquet.pk</span>
+          </div>
+          <div class="mt-2 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[var(--gold)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a1 1 0 0 0 1-1V8.5" /></svg>
+            <span>+92 300 1234567</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</body>
+</html>
